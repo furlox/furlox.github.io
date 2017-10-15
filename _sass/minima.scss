@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #839496 !default;
+$background-color: #002833 !default;
+$brand-color:      #b58901 !default;
+
+$grey-color:       #657b83 !default;
+$grey-color-light: #604501 !default;
+$grey-color-dark:  #93a1a1 !default;
+
+// Width of the content area
+$content-width:    60vw !default;
+
+$on-palm:          98vw !default;
+$on-laptop:        60vw !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;

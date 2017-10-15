@@ -1,18 +1,17 @@
 ---
 layout: page
-title: About
+title: ?!
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Archive of problems I'm solving for interview prep.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+# FeelsBadMan
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+> You look like you're going to spend your life having one epiphany
+> after another, always thinking you've finally figured out what's
+> holding you back, and how you can finally be productive and creative
+> and turn your life around. But nothing will ever change. That cycle of
+> mediocrity isn't due to some obstacle. It's who you are. The thing standing
+> in the way of your dreams is that the person having them is you.<br />
+> [XKCD 1027 - Pickup Artist](https://xkcd.com/1027/)
