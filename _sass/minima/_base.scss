@@ -1,4 +1,4 @@
-/**
+auto/**
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -7,8 +7,6 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
-
-
 
 /**
  * Basic styling
@@ -23,6 +21,8 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+  margin-bottom: 30vh;
+  overflow-y: scroll;
 }
 
 
@@ -83,7 +83,9 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+  font-family: "Times New Roman";
 }
+h1 {@include relative-font-size(1.2);}
 
 
 
@@ -95,11 +97,10 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
   }
 
   &:hover {
-    color: $text-color;
+    text-decoration: underline !important;
   }
 
   .social-media-list &:hover {
@@ -135,9 +136,15 @@ blockquote {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
-  background-color: #002b36;
-  font-family: Menlo, Hack, Meslo, Inconsolata, Consolas, monospace;
+  border: 0.1*$spacing-unit solid lighten($background-color, 3%);
+  border-radius: 0.25*$spacing-unit;
+  background-color: #fafffa;
+  font-family: $base-font-family;
+}
+
+pre,code > *
+{
+    font-weight: $base-font-weight !important;
 }
 
 code {
@@ -151,6 +158,7 @@ pre {
   > code {
     padding-right: 0;
     padding-left: 0;
+    border: 0;
   }
 }
 
@@ -166,6 +174,7 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+  padding-top: $spacing-unit;
   @extend %clearfix;
 
   @include media-query($on-laptop) {
@@ -209,4 +218,8 @@ pre {
   li + li {
     padding-top: 5px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 0px !important;
 }

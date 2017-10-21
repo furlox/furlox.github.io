@@ -2,27 +2,27 @@
 
 // Define defaults for each variable.
 
-$base-font-family: Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
+$base-font-family: Menlo, Meslo, Hack, Consolas, monospace;
+$base-font-size:   2vh !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit:     2vh !default;
 
-$text-color:       #839496 !default;
-$background-color: #002833 !default;
-$brand-color:      #b58901 !default;
+$text-color:       #111 !default;
+$background-color: #fff !default;
+$brand-color:      #002dff !default;
 
-$grey-color:       #657b83 !default;
-$grey-color-light: #604501 !default;
-$grey-color-dark:  #93a1a1 !default;
+$grey-color:       #000 !default;
+$grey-color-light: lighten($grey-color, 60%) !default;
+$grey-color-dark:  darken($grey-color, 10%) !default;
 
 // Width of the content area
 $content-width:    60vw !default;
 
 $on-palm:          98vw !default;
-$on-laptop:        60vw !default;
+$on-laptop:        100vh !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
